@@ -5,7 +5,7 @@ body {
 }
 
 .main {
-  background-color: #ffffff;
+  background-color: #fff;
   width: 58%;
   margin: 2rem 21%;
   padding-bottom: 1rem;
@@ -45,14 +45,36 @@ main {
   display: flex;
 }
 
+section div {
+  display: flex;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
+.toggle_button {
+  border: none;
+  background-color: #fff;
+  color: rgb(122, 122, 122);
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-left: 0.4rem;
+  margin-top: 0.08rem;
+}
+
+.toggle_button:hover {
+  text-decoration: underline;
+}
+
 ul {
   list-style: none;
+  overflow: hidden;
 }
 
 #skills li,
 #languages li,
 #interests li {
   display: flex;
+  transition: 0.8s;
 }
 
 li img {

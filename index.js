@@ -55,3 +55,23 @@ for (const { location, institution, additionalInformation, period } of instituti
     </li>
   `;
 }
+
+const buttons = document.getElementsByClassName('toggle_button');
+
+for (const button of buttons) {
+  button.addEventListener('click', () => {
+    console.log('clicked');
+    const ul = button.parentElement.nextSibling.nextSibling;
+    console.log(ul)
+    const li = ul.firstChild.nextSibling;
+    const height = ul.offsetHeight;
+    if (height) {
+      li.style.marginTop = `-${height + 30}px`;
+      button.innerText = 'Show';
+    }
+    else {
+      li.style.marginTop = `0px`;
+      button.innerText = 'Hide';
+    }
+  });
+}
