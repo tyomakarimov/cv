@@ -45,6 +45,11 @@ main {
   display: flex;
 }
 
+#contacts {
+  margin-top: -1rem;
+  margin-bottom: 0.4rem;
+}
+
 section div {
   display: flex;
   margin-top: -1rem;
